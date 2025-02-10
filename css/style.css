@@ -1,0 +1,361 @@
+:root {
+    --primary-font: 'Suisse Int\'l', sans-serif;
+    --primary-color: #9AF5BD;
+    --secondary-color: #042820;
+    --bg-primary: #042820;
+    --bg-secondary: #9AF5BD;
+}
+.section-gap{
+    padding: 80px 0;
+}
+.bg-primary {
+    background-color: #042820 !important;
+    color: #9AF5BD !important;
+}
+
+body {
+    font-family: 'Suisse Int\'l', sans-serif;
+    font-weight: 300;
+    background-color: var(--bg-primary);
+}
+
+header {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+header .navbar {
+    padding: 12px;
+}
+
+header .navbar-brand img {
+    width: 112px;
+}
+
+header .navbar-nav .nav-item .nav-link {
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+    color: var(--primary-color);
+    padding: 0px 12px;
+}
+
+#login {
+    color: var(--primary-color);
+    border: none;
+    text-decoration: underline;
+}
+
+#signup {
+    background-color: #9AF5BD;
+    border-radius: 50px;
+    color: var(--secondary-color);
+    border: none;
+    padding: 12px 16px;
+}
+
+
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url(../image/burger\ menu.png) !important;
+    /* Apna icon ka path yaha dal do */
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+}
+
+/* hero */
+
+.hero {
+    background: url(../image/pattern.png) center center / cover no-repeat;
+    height: auto;
+    background-color: var(--bg-primary);
+}
+
+.hero .row {
+    padding: 200px 0;
+}
+
+.hero h1,
+.hero p {
+    color: var(--primary-color);
+    font-size: 52px;
+    font-family: var(--primary-font);
+    font-weight: 300;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+/* grinberg card */
+.card-section {
+    padding: 0px 24px;
+    color: var(--primary-color);
+}
+
+.grinberg-one,
+.grinberg-two,
+.grinberg-three {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Gradient Overlay */
+.grinberg-one::after,
+.grinberg-two::after,
+.grinberg-three::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Adjust this to control gradient coverage */
+    background: linear-gradient(360deg, #042820 12.61%, rgba(4, 40, 32, 0.9) 26.73%, rgba(4, 40, 32, 0.7) 39.77%, rgba(4, 40, 32, 0.5) 52.81%, rgba(4, 40, 32, 0.25) 69.1%, rgba(4, 40, 32, 0) 85.4%);
+    z-index: 1;
+}
+
+/* Ensure content inside remains above the gradient */
+.grinberg-one>*,
+.grinberg-two>*,
+.grinberg-three>* {
+    position: relative;
+    z-index: 2;
+}
+
+.course-card {
+    padding-top: 420px;
+}
+
+.grinberg-one {
+    background-image: url(../image/Grinberg-one.jpg);
+}
+
+.grinberg-two {
+    background-image: url(../image/Grinberg-two.jpg);
+}
+
+.grinberg-three {
+    background-image: url(../image/Grinberg-three.jpg);
+}
+
+.card-section .course-title {
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.card-section .course-info {
+    font-size: 16px;
+    line-height: 20.75px;
+    margin-bottom: 12px;
+
+}
+
+.course-card .course-card-contain {
+    width: 36%;
+    font-size: 16px;
+}
+
+.card-section .course-info strong {
+    color: #FFEE00;
+}
+
+.btn-custom {
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    border-radius: 50px;
+    color: var(--primary-color); 
+    padding: 12px 16px;
+    margin-bottom: 32px;
+}
+.btn-custom:hover {
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    border-radius: 50px;
+    color: var(--primary-color); 
+    padding: 12px 16px;
+}
+
+/* subscribe */
+
+.subscribe {
+    background: url(../image/Subscribe.jpg);
+    background-position: center 68.5%;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    height: auto;
+    background-blend-mode: darken;
+    background-color: #00000017;
+}
+
+.subscribe .row {
+    padding: 160px 0;
+}
+
+.subscribe h3 {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 52px;
+    font-weight: 300;
+    line-height: 67.44px;
+    margin-bottom: 20px;
+}
+
+.subscribe p {
+    color: var(--primary-color);
+    font-family: var(--primary-font);
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20.75px;
+    margin-bottom: 80px;
+}
+
+.subscribe input::placeholder,
+.subscribe input {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.subscribe .form-control:focus {
+    color: var(--primary-color);
+    background-color: transparent;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+
+.subscribe button {
+    background-color: var(--bg-secondary);
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--secondary-color);
+    padding: 12px 16px;
+}
+
+/* footer */
+footer {
+    background-color: var(--bg-primary);
+    color: var(--primary-color);
+}
+
+.footer {
+    padding: 48px 24px;
+}
+
+.footer-menu li {
+    margin-bottom: 16px;
+}
+
+.footer-menu h5 {
+    color: #3B7860;
+    margin-bottom: 24px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.social-icons a {
+    padding-right: 8px;
+}
+
+.footer-nav-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+/* responsive */
+@media (min-width: 1400px) {
+
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 1390px;
+    }
+}
+
+@media (max-width: 767px) {
+    header .navbar-nav .nav-item .nav-link {
+        padding: 10px 12px;
+    }
+
+    .hero .row {
+        padding: 165px 0px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    /* card */
+    .course-card .course-card-contain {
+        width: 100%;
+        font-size: 14px;
+    }
+    .card-section .course-info{
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .card-section .course-title{
+        font-size: 24px;
+    }
+    .btn-custom{
+        margin-bottom: 24px;
+    }
+
+    .course-card {
+        padding-top: 160px;
+    }
+
+    /* subscribe */
+    .subscribe {
+        background: url(../image/Subscribe.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .subscribe .row {
+        padding: 160px 0;
+    }
+
+    .subscribe h3 {
+        font-size: 32px;
+        line-height: 41.5px;
+    }
+
+    .subscribe input::placeholder,
+    .subscribe input {
+        font-size: 14px;
+        width: 65% !important;
+    }
+
+    .subscribe p {
+        font-size: 14px;
+    }
+
+    .subscribe button {
+        font-size: 14px;
+    }
+
+    /* footer */
+    .social-icons a {
+        padding-right: 0px;
+    }
+
+    .footer {
+        padding: 40px 20px;
+    }
+}
